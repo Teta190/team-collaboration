@@ -1,13 +1,141 @@
-* {
+
+body {
+    font-family: "Josefin sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    height: 100vh;
 }
+.container {
+    max-width: 100%;
+    /* max-width: 1400px; */
+    margin: o auto;
+    padding: auto;
+}
+h2 {
+    font-family: "Josefin sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+}
+
+/* Contact find Us */
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+.contact-form {
+    flex: 1;
+    margin-right: 20px;
+    max-width: 600px;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-form textarea {
+    height: 50px;
+}
+.contact-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-left: 45%;
+   
+    
+}
+.contact-info {
+    font-weight: 600;
+    margin-top: 20px;
+    flex: 0,5;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    border-radius: 10px;
+}
+.contact-info p {
+    margin: 10px 0;
+}
+.spanContact-deteils {
+    font-style: inherit;
+    font-weight: 300;
+}
+.map-section {
+    margin-top: 40px;
+    text-align: center;
+    
+}
+.map {
+    width: 100%;
+    height: 300px;
+    background-image: url(./images/Screenshot\ 2024-05-23\ at\ 13.54.13.png);
+    /* Add the path to your map background image */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.map .marker {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(3, 2, 2);
+    border-radius: 50%;
+    position: absolute;
+}
+.map .marker:nth-child(1) { top: 30%; left: 40%; }
+.map .marker:nth-child(2) { top: 50%; left: 60%; }
+.map .marker:nth-child(1) { top: 70%; left: 80%; }
+.address {
+    margin-top: 20px;
+
+    @media (max-width: 700px) {
+        .contact-section {
+            flex-direction: column;
+        }
+        .contact-form {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+        .contact-info {
+            padding: 10px;
+        }
+        .map-section h2 {
+            font-size: 1.5em;
+        }
+        .map {
+            height: 200px;
+        }
+    }
+}
+
+/* ---Contact find Us-- */
+
+
+/* Footer */
 footer {
+    max-width: 100%;
     background-color: black;
 }
 .footerContainer {
-    width: 100%;
+    /* width: 100%; */
     padding: 70px 30px 20px;
 }
 .socialIcons {
@@ -77,3 +205,4 @@ footer {
         margin: 10px;
     }
 }
+/* ---Footer--- */

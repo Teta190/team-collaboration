@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -14,6 +18,33 @@
     <title>Activities for young people</title>
   </head>
   <body>
+    <div class="contact-container container">
+      <section class="contact-section">
+        <div class="contact-form">
+          <input type="text" id="fullName" placeholder="Full Name" />
+          <input type="email" id="email" placeholder="Email" />
+          <input type="tel" id="phone" placeholder="Phone number" />
+          <textarea id="comment" placeholder="Comment"></textarea>
+          <button type="button" onclick="submitForm">Submit</button>
+        </div>
+        <div class="contact-info">
+          <p>Email us:<span class="spanContact-deteils">Lochquarry@gmail.com</span></p>
+          <p>Phone us:<span class="spanContact-deteils">01475 229 8311</span></p>
+        </div>
+      </section>
+      <section class="map-section">
+        <h2>Find us</h2>
+        <div class="map">
+          <div class="marker"></div>
+          <div class="marker"></div>
+          <div class="marker"></div>
+        </div>
+        <div class="address">
+                <p>Lochquarry Outdoor Centre, Aberfeldy Rd, Kenmore, Aberfeldy PH15 2NN, Scotland</p>
+            </div>
+      </section>
+    </div>
+
     <footer>
       <div class="footerContainer">
         <div class="socialIcons">
@@ -40,5 +71,6 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
