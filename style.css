@@ -5,29 +5,27 @@ body {
 }
 h3,
 p {
-    margin-top: 0;
+  margin-top: 0;
   margin-bottom: 40px;
 }
 
 img {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
-
 
 .main-staff-about {
-    display: flex;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: 50px;
-    margin-right: 50px;
-    max-width: 600px;
-    
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+  max-width: 600px;
 }
 .container-title {
-    justify-content: center;
-    text-align: center;
-    display: flex;
+  justify-content: center;
+  text-align: center;
+  display: flex;
 }
 .staff-about {
   list-style: none;
@@ -39,13 +37,13 @@ img {
   max-width: 200px;
 }
 .name-worker {
-    text-align: center;
+  text-align: center;
 }
 .title-staff {
-    text-align: center;
+  text-align: center;
 }
 .staff-menu {
-     display: flex;
+  display: flex;
   flex-direction: column;
   margin-bottom: 0;
   align-items: center;
@@ -53,138 +51,197 @@ img {
   flex-wrap: wrap;
 }
 .list-our-staff {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .circle-img {
- display: inline-block;
+  display: inline-block;
   border-radius: 50%;
   overflow: hidden;
   width: 130px;
   height: 130px;
 }
 .circl-pictures {
-     width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
-.gallery-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
-    margin-top: 40px;
-}
-.gallery >img {
-    width: calc(90% / 3);
-    height: 300px;
-    margin: 0 auto;
-    float: inline-start;
-    object-fit: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
 
+/* _______________js-slide-try1 ______________*/
+
+.gallery img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.gallery img.enlarged {
+  transform: scale(2);
+  z-index: 10;
+  position: relative;
+}
+.slideshow-container {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+}
+.slideshow {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+.slide {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.slide img {
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+.slide h2 {
+  margin: 10px 0 5px;
+}
+.slide p {
+  margin: 5px 0;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* _______________js-slide-try1 ______________*/
+
+.gallery-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.gallery > img {
+  width: calc(90% / 3);
+  height: 300px;
+  margin: 0 auto;
+  float: inline-start;
+  object-fit: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    row-gap: 40px;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  row-gap: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 100px;
 }
-
-
 
 /* Activities-page */
 
 .section-activities {
-    background-color:;
+  background-color: ;
 }
 .main-box-content {
-   display: flex;
-    flex-direction: column;
-    gap: 20px;
-
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .about-outdoor {
-     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
-    padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  padding-top: 60px;
 }
 .activities-about {
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-bottom: 60px;
-    align-items: center;
-    justify-content: center;
-    max-width: fit-content;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 60px;
+  align-items: center;
+  justify-content: center;
+  max-width: fit-content;
 }
 .activities-container {
-      display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    gap: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
 }
 .activities-container:nth-child(even) {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 .img-shadow {
-     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-     border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
 }
 .box-img {
-    max-width: 400px;
-    width: 100%;
-    height: auto;
-    display: flex;
-    box-sizing: border-box;
-    flex-direction: column;
-    padding: 20px;
-    margin: 0 ;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: 20px;
+  margin: 0;
 }
 .box-content {
-   display: flex;
-    max-width: 400px;
-    width: 100%;
-    box-sizing: border-box;
-    flex-direction: column;
-    padding: 40px; /* Зменшує внутрішні відступи */
-    margin: 0;
-    align-items: center;
+  display: flex;
+  max-width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: 40px; /* Зменшує внутрішні відступи */
+  margin: 0;
+  align-items: center;
 }
 .title-activ {
-    display: flex;
-    color: #007bff;
-    justify-content: center;
+  display: flex;
+  color: #007bff;
+  justify-content: center;
 }
 .activ-content {
-      justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 button {
-    padding: 5px 10px;
-    font-size: 1em;
-    color: #fff;
-    background-color:chocolate;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  padding: 5px 10px;
+  font-size: 1em;
+  color: #fff;
+  background-color: chocolate;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
   width: 130px;
 }
 
 button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 .backgraund-box {
-    background-color: #007bff;
+  background-color: #007bff;
 }
-    
