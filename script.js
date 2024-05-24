@@ -10,3 +10,6 @@ function submitForm () {
         alert('Pleaase fill in all fields');
     }
 }
+//  Activites pages 
+
+// /* Activites pages */

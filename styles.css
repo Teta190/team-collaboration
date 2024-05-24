@@ -12,8 +12,8 @@ body {
     height: 100vh;
 }
 .container {
-    max-width: 100%;
-    /* max-width: 1400px; */
+    /* max-width: 1200px; */
+   /* width: 100%; */
     margin: o auto;
     padding: auto;
 }
@@ -23,6 +23,100 @@ h2 {
         font-weight: 400;
         font-style: normal;
 }
+
+/* Activites pages */
+
+.activity {
+    min-height: 40vh;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 20px 0;
+    background-color: #eee;
+    text-align: center;
+    
+    position: relative;
+    overflow: hidden;
+}
+.activity::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Semi-transparent overlay */
+    z-index: 1;
+}
+
+.activity h2,
+.activity p {
+    position: relative;
+    z-index: 2;
+}
+.activity h2 {
+
+    margin-top: 100px;
+    font-size: 1.25em;
+    color: white;
+}
+
+.activity p {
+    box-sizing: content-box;
+    padding: 0 30px;
+    margin: 10px 0 0;
+    color: white;
+}
+
+
+.activity1 {
+    width: 100%;
+        height: 300px;
+        background-image: url(./images/Activities1.png);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+}
+.activity2 {
+    width: 100%;
+    height: 300px;
+    background-image: url(./images/Activities2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.activity3 {
+    width: 100%;
+    height: 300px;
+    background-image: url(./images/Activities3.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.activity4 {
+    width: 100%;
+    height: 300px;
+    background-image: url(./images/Activities4.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+@media (max-width: 768px) {
+    .activity {
+        margin: 10px 0;
+    }
+
+    header h1,
+    footer h2 {
+        font-size: 1.2em;
+    }
+
+    .activity h2 {
+        font-size: 1em;
+    }
+}
+/*----/Activites pages/---*/
 
 /* Contact find Us */
 
@@ -130,12 +224,23 @@ h2 {
 
 
 /* Footer */
+@media (max-width: 700px) {
+    .footerNav ul {
+        flex-direction: column;
+    }
+
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
 footer {
     max-width: 100%;
     background-color: black;
 }
 .footerContainer {
-    /* width: 100%; */
+    width: 100%;
     padding: 70px 30px 20px;
 }
 .socialIcons {
@@ -195,14 +300,5 @@ footer {
     font-weight: 500;
     margin: 0px 5px;
 }
-@media (max-width: 700px){
-    .footerNav ul{
-        flex-direction: column;
-    }
-    .footerNav ul li{
-        width: 100%;
-        text-align: center;
-        margin: 10px;
-    }
-}
+
 /* ---Footer--- */
