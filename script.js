@@ -1,3 +1,4 @@
+
 function submitForm () {
     const fullName = document.getElementById('fullName').value;
     const email = document.getElementById('email').value;
@@ -13,3 +14,4 @@ function submitForm () {
 //  Activites pages 
 
 // /* Activites pages */
+
